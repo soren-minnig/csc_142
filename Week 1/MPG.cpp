@@ -35,8 +35,6 @@
  */
 
 #include <iostream>
-#include <iomanip>
-#include <cmath>
 
 int main(){   
     // Constant declarations
@@ -46,7 +44,7 @@ int main(){
     // Variable declarations
     std::string desc;
     int miles;
-    float gallons;      
+    double gallons;      
     float mpg;
     float kilometers;
     float liters;
@@ -63,22 +61,16 @@ int main(){
     std::cin>>gallons;
 
     // Calculate the results - I used ceil(100 * x) / 100 to round up
-    mpg = ceil(100 * (miles / gallons)) / 100;
+    mpg = miles / gallons;
     kilometers = miles * KM_PER_MILE;
     liters = gallons * LITERS_PER_GALLON;
-    lpg = ceil(100 * (liters / kilometers * 100)) / 100;
-
-    // Rounding after calculating lpg
-    kilometers = ceil(100 * kilometers) / 100;
-    liters = ceil(100 * liters) / 100;
+    lpg = (liters / kilometers * 100);
 
     // Print the user inputs and final results
     std::cout<<"\n";
     std::cout<<"Fuel efficiency of your " + desc + ":"<<std::endl;
-    std::cout<<"You drove " << miles << " miles (" << kilometers << " kilometers) and used "
-    << gallons << " gallons (" << liters << " liters)."<<std::endl;
-    std::cout<<"Your fuel efficiency is " << mpg << " miles per gallon ("
-    << lpg << " liters per 100 kilometers)."<<std::endl;
+    printf("You drove %d miles (%.2f kilometers) and used %.2f gallons (%.2f liters).", miles, kilometers, gallons, liters);
+    printf("\nYour fuel efficiency is %.2f mpg (%.2f liters per 100 kilometers).", mpg, lpg);
 
     return 0;
 }
