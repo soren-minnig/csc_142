@@ -1,38 +1,11 @@
-/* 
-   MPG.cpp
-     Calculate the fuel efficiency of a vehicle
- 
-   Keyboard inputs:
-     Vehicle description (string)
-     Miles traveled (int)
-     Fuel used in gallons (double)
- 
-   Outputs:
-     Miles per gallon
- 
-   Name: Soren Minnig
-   Date: 1/24/25
-
-
-  The starter file calculates the fuel efficiency of a vehicle in MPG (miles per gallon), a
-    quantity commonly used in the US. In much of the rest of the world, fuel efficiency is
-    often reported in L/100km (liters per 100 kilometers)
-
- 
-  Your task
-
-    Extend the starter file to calculate both measures—MPG and L/100km—for the given
-    user input.
-    The starter file includes a constant for KM_PER_MILE which you must use in your
-    calculation; you must also add a new constant for LITERS_PER_GALLON (you may need
-    to use Google to find the correct conversion factor to use). Add appropriate constant(s),
-    variable(s), assignment statement(s), and print statement(s) to the program to
-    generate correct and understandable output. An example will be shown in class.
- 
-
-    For up to +2 points extra credit, format the output values to have exactly two digits to
-    the right of the decimal place.
- */
+/*
+File name: mpg.cpp
+Description: This program prompts the user to enter a description of their car,
+the amount of miles driven, and the amount of gallons used. Then, it calculates
+miles per gallons and l/100km.
+Creator: Soren Minnig
+Date: 2/7/25
+*/
 
 #include <iostream>
 
@@ -45,10 +18,7 @@ int main(){
     std::string desc;
     int miles;
     double gallons;      
-    float mpg;
-    float kilometers;
-    float liters;
-    float lpg;
+    float mpg, kilometers, liters, lpg;
 
     // Prompt for user inputs
     // Ensure that when typing input in the console, you give a whole number for miles,

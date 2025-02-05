@@ -1,5 +1,5 @@
 /*
-File name: exams.cpp
+File name: speedtrap.cpp
 Description: This program prompts the user to enter the speed limit and their
 driving speed, and then determines if they went over the speed limit.
 Creator: Soren Minnig

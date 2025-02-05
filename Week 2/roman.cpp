@@ -17,8 +17,7 @@ int main(){
     std::vector<string> ones = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
     std::vector<string> tens = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
     int x;
-    string o;
-    string t;
+    string o, t;
 
     do {
         std::cout<<"Enter a number to convert into a roman numeral (1-100)."<<std::endl;

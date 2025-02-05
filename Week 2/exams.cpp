@@ -11,9 +11,7 @@ Date: 1/31/25
 int main(){
     // Variable declarations
     std::string name;
-    int exam_1;
-    int exam_2;
-    int exam_3;
+    int exam_1, exam_2, exam_3;
     double average;
 
     // Prompt for user inputs
