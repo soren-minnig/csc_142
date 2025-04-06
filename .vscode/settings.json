@@ -60,7 +60,11 @@
         "thread": "cpp",
         "xlocbuf": "cpp",
         "xlocmes": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "chrono": "cpp",
+        "forward_list": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
